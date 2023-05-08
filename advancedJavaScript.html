@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance JS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Template String -->
+    <script>
+      // let user = "Yahoo Baba";
+      // let marks = 350;
+      // document.write("Hello " + user);
+      // let hello = `Hello ${user} your marks is ${marks}`;
+      // document.write(hello);
+      // let firstName = "Yahoo";
+      // let lastName = "Baba";
+      // function fullName(firstName, lastName) {
+      //     return `${firstName} ${lastName}`
+      // }
+      // let hello = `Hello ${fullName(firstName, lastName)}`;
+      // document.write(hello);
+      // console.log(hello)
+    </script>
+
+    <!-- Arrow function -->
+    <script>
+      // let welcome = function(name) {
+      //     return `Hello & Welcome ${name}`
+      // }
+      // console.log(welcome("Yahoo Baba"))
+
+      // let welcome = (name, age) => {
+      //     return `Hello & Welcome ${name} - ${age}`
+      // }
+      // console.log(welcome("Yahoo Baba", 25))
+    </script>
+
+    <!-- Functions with Multiple Arguments -->
+    <script>
+      // function sum(name,course, ...args){
+      //     console.log(arguments);
+      //     document.write(`Hello ${name} of ${course}:`);
+
+      //     let sum = 0;
+      //     for(let i in args){
+      //         sum += args[i];
+      //     }
+      //     document.write(sum + "<br>");
+      // }
+      // sum("Yahoo Baba", "Btech", 20,30,40);
+      // sum("Ram Kumar","BA", 55,44);
+      // sum(20,30);
+    </script>
+
+    <!-- Spread Operators in JavaScript  -->
+    <script>
+      // function sum(name, ...args){
+      //     console.log(arguments);
+      //     document.write(`Hello ${name} : `);
+
+      //     let sum = 0;
+      //     for(let i in args){
+      //         sum += args[i];
+      //     }
+      //     document.write(sum);
+      // }
+      // var arr = [10,20,30,40]
+      // sum("Yahoo Baba", ...arr);
+
+      // var arr1 = [10, 20, 30, 40];
+      // var arr2 = [50, 60];
+      // var arr3 = [...arr1, ...arr2];
+      // var arr3 = [...arr2, ...arr1];
+      // console.log(arr3);
+    </script>
+
+    <!-- Object literals in JavaScript  -->
+    <script>
+      // let name = "Yahoo Baba";
+      // let course = "Batch";
+      // var obj = {
+      //     name,
+      //     course,
+      // };
+      // console.log(obj);
+
+      // let n = "student";
+      // var obj = {
+      //     [n + "name"] : "Yahoo Baba",
+      //     course : "Btech"
+      // }
+      // console.log(obj);
+
+      // let fname = "Yahoo";
+      // let lname = "Baba";
+      // let course = "Btech";
+      // function student(fname, lname, course) {
+      //     let fullName = fname + " " + lname ;
+      //     return {fullName , course};
+      // }
+      // let s = student(fname, lname, course);
+      // console.log(s.fullName);
+      // console.log(s.course)
+    </script>
+
+    <!-- Destructuring Array in JavaScript -->
+    <script>
+      // let user = ["Yahoo Baba", 25, "Delhi"];
+      // let [name, age, city] = user;
+      // let user = ["Yahoo Baba", , "Delhi"];
+      // let [name, age = 20, city] = user;
+      // console.log (name);
+      // console.log (age);
+      // console.log (city);
+
+      // function user(){
+      //     return ["Yahoo Baba", 25, "Delhi"];
+      // }
+      // let [name, age, city] = user();
+      // console.log(city)
+    </script>
+
+    <!-- Destructuring Objects in JavaScript -->
+    <script>
+      // let user = {
+      //     name : "Yahoo Baba",
+      //     age : 25,
+      //     city : "Delhi"
+      // }
+      // let {name, age, city} = user;
+      // console.log (name);
+      // console.log (age);
+      // console.log (city);
+    </script>
+
+    <!-- OOP in JavaScript -->
+    <script>
+      // class hello{
+      //     message() {
+      //         console.log("Hello Everyone");
+      //     }
+      //     sorry() {
+      //         console.log("Sorry Everyone");
+      //     }
+      // }
+      // let a = new hello();
+      // a.message();
+      // a.sorry();
+
+      // class student {
+      //     constructor(name, age){
+      //         this.studentname = name;
+      //         this .studentage = age;
+      //         console.log("constructor Function");
+      //     }
+      //     hello(){
+      //         document.write(`Hello ${this.studentname}
+      //         Your age is ${this.studentage}`);
+      //     }
+      //     static staticMethod() {
+      //         console.log("static Function");
+      //     }
+      // }
+      // let a = new student("Yahoo baba", 25);
+      // let b = new student("Ram Kumar", 22);
+      // a.hello();
+      // student.staticMethod();
+    </script>
+
+    <!-- Inheritance in JavaScript -->
+    <script>
+      // class employee{
+      //     constructor(name, age, salary){
+      //         this.empname = name;
+      //         this.empage = age;
+      //         this.empsalary = salary;
+      //         console.log("constructor : Employee");
+      //     }
+      //     info(){
+      //         document.write(`<h3>Employee Class</h3>
+      //         Name : ${this.empname} <br>
+      //         Age : ${this.empage} <br>
+      //         Salary : ${this.empsalary} <br> `)
+      //     }
+      // }
+
+      // class manager extends employee {
+      //     info(){
+      //         let ta = 1000;
+      //         let pa = 300;
+      //         let totalsalary = this.employee + ta + pa ;
+
+      //         document.write(`<h3>Manager Class</h3>
+      //         Name : ${this.empname} <br>
+      //         Age : ${this.empage} <br>
+      //         Salary : ${totalsalary} <br> `)
+      //     }
+      // }
+
+      // class test extends manager{
+
+      // }
+      // let a = new test("Yahoo Baba", 25, 20000);
+      // // let b = new employee("Ram kumar", 22, 12000);
+      // a.info();
+      // // b.info();
+    </script>
+
+    <!-- Modules in JavaScript -->
+    <script></script>
+
+    <!-- Promises in JavaScript -->
+    <script>
+        // let complete = true;
+        // let prom = new Promise(function(resolve, reject){
+        //     if(complete){
+        //         resolve("I am successfull.");
+        //     }else{
+        //         reject("I am failed.");
+        //     }
+        // });
+        // console.log(prom);
+
+
+        //   function prom(complete) {
+        //     return new Promise(function (resolve, reject) {
+        //       console.log("Fetching data, please wait.");
+        //       setTimeout(() => {
+        //         if (complete) {
+        //           resolve("I am successfull.");
+        //         } else {
+        //           reject("I am failed.");
+        //         }
+        //       }, 3000);
+        //     });
+        //   }
+        //   prom(true)
+        //     .then((result) => {
+        //       console.log(result);
+        //     })
+        //     .catch((error) => {
+        //       console.log(error);
+        //     });
+
+        /* For Division */
+        // function prom(a, b) {
+        //     return new Promise(function (resolve, reject) {
+        //       console.log("Fetching data, please wait.");
+        //       var c = a / b;
+        //       setTimeout(() => {
+        //         if (a,b) {
+        //           resolve(`Your answer : ${c}`);
+        //         } else {
+        //           reject("Failed to calculate.");
+        //         }
+        //       }, 2000);
+        //     });
+        //   }
+        //   prom(9, 2)
+        //     .then((result) => {
+        //       console.log(result);
+        //     })
+        //     .catch((error) => {
+        //       console.log(error);
+        //     });
+
+        /* Ajax Method */
+        // function prom() {
+        //     return new Promise(function (resolve, reject) {
+        //         console.log("Fetching data, please wait.");
+        //         setTimeout(() => {
+        //             $.get("https://jsonplaceholder.typicode.com/posts", function (data) {
+        //                 resolve(data);
+        //             }).fail(err => {
+        //                 reject("Failed to load JSON.");
+        //             })
+        //         }, 2000);
+        //     });
+        // }
+        // prom()
+        //     .then((result) => {
+        //         console.log(result);
+        //     })
+        //     .catch((error) => {
+        //         console.log(error);
+        //     });
+    </script>
+
+    <!-- Promise.all() in JavaScript -->
+    <script>
+      // let p1 = new Promise((resolve, reject) => {
+      //   setTimeout(() => {
+      //     console.log('The first promise has resolved');
+      //     resolve(10);
+      //   }, 1 * 1000);
+      // });
+      // let p2 = new Promise((resolve, reject) => {
+      //   setTimeout(() => {
+      //     console.log('The second promise has resolved');
+      //     resolve(20);
+      //   }, 2 * 1000);
+      // });
+      // let p3 = new Promise((resolve, reject) => {
+      //   setTimeout(() => {
+      //     console.log('The third promise has resolved');
+      //     resolve(30);
+      //   }, 3 * 1000);
+      // });
+
+      // var total = 0;
+      // Promise.all([p1, p2, p3]).then((result) => {
+
+      //   for(var i in result) { total += result[i]; }
+      //   console.log(`Results: ${result}`)
+      //   console.log(`Total: ${total}`)
+      // }).catch((error) => {
+      //   console.log(`Results: ${error}`)
+      // }) 
+
+
+      // failed
+      // let p1 = new Promise((resolve, reject) => {
+      //   setTimeout(() => {
+      //     console.log('The first promise has resolved');
+      //     resolve(10);
+      //   }, 1 * 1000);
+      // });
+      // let p2 = new Promise((resolve, reject) => {
+      //   setTimeout(() => {
+      //     console.log('The second promise has failed');
+      //     reject("Failed");
+      //   }, 2 * 1000);
+      // });
+      // let p3 = new Promise((resolve, reject) => {
+      //   setTimeout(() => {
+      //     console.log('The third promise has resolved');
+      //     resolve(30);
+      //   }, 3 * 1000);
+      // });
+
+      // var total = 0;
+      // Promise.all([p1, p2, p3]).then((result) => {
+
+      //   for(var i in result) { total += result[i]; }
+      //   console.log(`Results: ${result}`)
+      //   console.log(`Total: ${total}`)
+      // }).catch((error) => {
+      //   console.log(`Results: ${error}`)
+      // })
+      
+    </script>
+    
+
+
+
+    
+
+
+
+
+</head>
+
+<body></body>
+
+</html>
