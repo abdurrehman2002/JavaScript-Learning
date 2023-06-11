@@ -50,7 +50,7 @@ At a very high level, there are two types of data types in JavaScript
 1. Reference data types: Arrays and Objects
 */
 
-var arr = [1,2,3,4,5,6]
+// var arr = [1,2,3,4,5,6]
 // console.log(arr)
 
 // Operators in JavaScript
@@ -230,6 +230,39 @@ let myDate = new Date();
 // console.log(parsed)
 
 
+
+
+
+// JavaScript Data Structure 
+// Arrays
+// const arr = [1, 2, 3, 'Vishwas']
+// arr.push(4);
+// arr.unshift(0)
+// arr.pop();
+// arr.shift()
+
+// for(const item of arr) {
+//     console.log(item)
+// }
+
+
+//Objects
+const obj = {
+    name: "Bruce",
+    age:"25",
+    "key-three": true,
+    sayMyName:function() {
+        console.log(this.name)
+    }
+}
+obj.hobby == 'football'
+delete obj.hobby
+
+console.log(obj.name)
+console.log(obj['age'])
+console.log(obj['key-three'])
+console.log(obj)
+obj.sayMyName()
 
 
 
